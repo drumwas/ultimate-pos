@@ -1,0 +1,46 @@
+{
+    "name": "parcy/laravel-mpesa",
+    "description": "M-Pesa Daraja API integration for Laravel applications",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Parcy Analytics",
+            "email": "dev@parcytech.com"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "illuminate/support": "^9.0|^10.0|^11.0",
+        "illuminate/http": "^9.0|^10.0|^11.0",
+        "illuminate/database": "^9.0|^10.0|^11.0",
+        "illuminate/queue": "^9.0|^10.0|^11.0",
+        "giggsey/libphonenumber-for-php": "^8.12"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^8.0|^9.0",
+        "phpunit/phpunit": "^10.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Parcy\\Mpesa\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Parcy\\Mpesa\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Parcy\\Mpesa\\MpesaServiceProvider"
+            ],
+            "aliases": {
+                "Mpesa": "Parcy\\Mpesa\\Facades\\Mpesa"
+            }
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
