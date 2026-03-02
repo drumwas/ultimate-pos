@@ -14,7 +14,7 @@
         },
         {
             "type": "path",
-            "url": "C:/Users/Administrator/Downloads/parcy-mpesa/parcy-mpesa",
+            "url": "./parcy-mpesa",
             "options": {
                 "symlink": false
             }
